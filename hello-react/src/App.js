@@ -25,7 +25,8 @@ function App() {
 export default App;
 */
 import React, { Component } from "react";
-import "./App.css";
+import MyName from "./MyName";
+import Counter from "./Counter";
 
 class App extends Component {
   render() {
@@ -41,13 +42,13 @@ class App extends Component {
    //3항연산자를 이용함(false 값)
     return <div>{1 + 2 === 2 ? <div>맞아요!</div> : <div>틀려요!</div>}</div>;
     */
-    const value = 1;
-    const style = {
-      backgroundColor: "black",
-      padding: "16px",
-      color: "white",
-      fontSize: "12px",
-    };
+    // const value = 1;
+    // const style = {
+    //   backgroundColor: "black",
+    //   padding: "16px",
+    //   color: "white",
+    //   fontSize: "12px",
+    // };
     return (
       // <div>
       //   {(function () {
@@ -56,7 +57,7 @@ class App extends Component {
       //     if (value === 3) return <div>셋</div>;
       //   })()}
       // </div>
-      <div className="App">리액트</div>
+      <Counter />
     );
   }
 }
